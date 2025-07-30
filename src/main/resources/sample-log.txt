@@ -1,0 +1,48 @@
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "str" is null
+    at com.example.StringUtils.countLength(StringUtils.java:12)
+    at com.example.App.main(App.java:5)
+
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+    at com.example.ArrayHandler.process(ArrayHandler.java:18)
+    at com.example.App.main(App.java:6)
+
+java.lang.RuntimeException: Failed to process request
+	at com.example.service.OrderService.processOrder(OrderService.java:42)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "customerName" is null
+	at com.example.service.CustomerService.validateCustomer(CustomerService.java:57)
+	at com.example.service.OrderService.processOrder(OrderService.java:40)
+	... 4 more
+
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at com.example.utils.Sorter.quickSort(Sorter.java:88)
+	at com.example.MainApp.sortNumbers(MainApp.java:23)
+	at com.example.MainApp.main(MainApp.java:10)
+
+java.lang.IllegalStateException: Spring application context not initialized
+	at com.example.AppService.performOperation(AppService.java:15)
+	at com.example.AppRunner.run(AppRunner.java:9)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at com.example.Main.main(Main.java:5)
+
+com.google.cloud.spanner.SpannerException: ABORTED: Transaction aborted due to concurrent modification.
+	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerExceptionPreformatted(SpannerExceptionFactory.java:78)
+	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:91)
+	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:115)
+	at com.google.cloud.spanner.v1.SpannerImpl$9.onFailure(SpannerImpl.java:1360)
+	at com.google.api.core.ApiFutures$1.onFailure(ApiFutures.java:68)
+	at com.google.api.core.SettableApiFuture$1.run(SettableApiFuture.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.grpc.StatusRuntimeException: ABORTED: Transaction was aborted. It can be retried.
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:278)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:261)
+	at com.google.spanner.v1.SpannerGrpc$SpannerBlockingStub.commit(SpannerGrpc.java:2165)
+	at com.google.cloud.spanner.v1.SpannerImpl$9.apply(SpannerImpl.java:1348)
+	... 6 more
