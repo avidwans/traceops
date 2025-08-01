@@ -6,4 +6,5 @@ model/ExceptionAnalysis.class
 controller/TraceOpsController.class
 ai/LLMClient.class
 pdf/PDFGenerator.class
+model/ChatBotQuery.class
 util/PromptBuilder.class

@@ -1,12 +1,12 @@
-Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "str" is null
+|microservice-1| Aug 01, 2025 01:42:05 PM Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "str" is null
     at com.example.StringUtils.countLength(StringUtils.java:12)
     at com.example.App.main(App.java:5)
 
-java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+|microservice-1| Aug 10, 2025 01:42:05 PM java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
     at com.example.ArrayHandler.process(ArrayHandler.java:18)
     at com.example.App.main(App.java:6)
 
-java.lang.RuntimeException: Failed to process request
+|microservice-2| Aug 01, 2024 01:42:05 PM java.lang.RuntimeException: Failed to process request
 	at com.example.service.OrderService.processOrder(OrderService.java:42)
 	at com.example.controller.OrderController.submitOrder(OrderController.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -17,12 +17,12 @@ Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" becau
 	at com.example.service.OrderService.processOrder(OrderService.java:40)
 	... 4 more
 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+|microservice-2| July 23, 2025 01:42:05 PM Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
 	at com.example.utils.Sorter.quickSort(Sorter.java:88)
 	at com.example.MainApp.sortNumbers(MainApp.java:23)
 	at com.example.MainApp.main(MainApp.java:10)
 
-java.lang.IllegalStateException: Spring application context not initialized
+|microservice-1| August 23, 2025 01:42:05 PM java.lang.IllegalStateException: Spring application context not initialized
 	at com.example.AppService.performOperation(AppService.java:15)
 	at com.example.AppRunner.run(AppRunner.java:9)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
@@ -30,7 +30,7 @@ java.lang.IllegalStateException: Spring application context not initialized
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at com.example.Main.main(Main.java:5)
 
-com.google.cloud.spanner.SpannerException: ABORTED: Transaction aborted due to concurrent modification.
+|microservice-1| July 23, 2024 01:42:05 PM com.google.cloud.spanner.SpannerException: ABORTED: Transaction aborted due to concurrent modification.
 	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerExceptionPreformatted(SpannerExceptionFactory.java:78)
 	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:91)
 	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:115)

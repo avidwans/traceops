@@ -20,6 +20,7 @@ public class PromptBuilder {
                 prompt.append("```\n").append(trace).append("```\n\n");
             }
         }
+        System.out.println(prompt.toString());
         return prompt.toString();
     }
 }
