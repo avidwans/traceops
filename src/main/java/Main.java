@@ -10,7 +10,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Path logPath = Paths.get("src/main/resources/sample-log.txt");
+        /*Path logPath = Paths.get("src/main/resources/sample-log.txt");
         Map<String, List<String>> exceptionMap = LogParser.extractExceptions(logPath);
         String prompt = PromptBuilder.buildPrompt(exceptionMap);
         String llmResponse = LLMClient.sendPromptToModel(prompt);
@@ -20,5 +20,6 @@ public class Main {
 
         PDFGenerator.generate(results, "Exception_Report.pdf");
         System.out.println("PDF generated.");
+    }*/
     }
 }

@@ -26,6 +26,7 @@ public class ResponseMapper {
             Pattern occurrencePattern = Pattern.compile("\\*\\*Number of occurrence:\\*\\*\\s*(\\d+)");
             Pattern rootCausePattern = Pattern.compile("\\*\\*Root Cause:\\*\\*\\s*(.*)");
             Pattern solutionsPattern = Pattern.compile("\\*\\*Possible Solutions:\\*\\*\\s*(.*)", Pattern.DOTALL);
+            Pattern microServicePattern = Pattern.compile("\\*\\*Microservice:\\*\\*\\s*(.*)");
 
             Matcher m;
 
@@ -40,6 +41,9 @@ public class ResponseMapper {
 
             m = solutionsPattern.matcher(trace);
             if (m.find()) ea.setPossibleSolutions(m.group(1).trim());
+
+            m = microServicePattern.matcher(trace);
+            if(m.find()) ea.setMicroservices(m.group(1).trim());
 
             if(Objects.nonNull(ea.getException())) {
                 results.add(ea);

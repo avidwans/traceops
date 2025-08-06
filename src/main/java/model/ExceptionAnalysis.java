@@ -6,18 +6,29 @@ public class ExceptionAnalysis {
     private int occurrence;
     private String rootCause;
     private String possibleSolutions;
+    private String microservices;
 
     public ExceptionAnalysis() {
     }
 
-    public ExceptionAnalysis(String exception, int occurrence, String rootCause, String possibleSolutions) {
+    public ExceptionAnalysis(String exception, int occurrence, String rootCause, String possibleSolutions, String microservices) {
         this.exception = exception;
         this.occurrence = occurrence;
         this.rootCause = rootCause;
         this.possibleSolutions = possibleSolutions;
+        this.microservices = microservices;
     }
 
     // Constructors, getters, setters
+
+
+    public String getMicroservices() {
+        return microservices;
+    }
+
+    public void setMicroservices(String microservices) {
+        this.microservices = microservices;
+    }
 
     public String getException() {
         return exception;

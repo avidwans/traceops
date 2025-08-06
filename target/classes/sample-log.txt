@@ -6,22 +6,6 @@
     at com.example.ArrayHandler.process(ArrayHandler.java:18)
     at com.example.App.main(App.java:6)
 
-|microservice-2| Aug 01, 2024 01:42:05 PM java.lang.RuntimeException: Failed to process request
-	at com.example.service.OrderService.processOrder(OrderService.java:42)
-	at com.example.controller.OrderController.submitOrder(OrderController.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" because "customerName" is null
-	at com.example.service.CustomerService.validateCustomer(CustomerService.java:57)
-	at com.example.service.OrderService.processOrder(OrderService.java:40)
-	... 4 more
-
-|microservice-2| July 23, 2025 01:42:05 PM Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
-	at com.example.utils.Sorter.quickSort(Sorter.java:88)
-	at com.example.MainApp.sortNumbers(MainApp.java:23)
-	at com.example.MainApp.main(MainApp.java:10)
-
 |microservice-1| August 23, 2025 01:42:05 PM java.lang.IllegalStateException: Spring application context not initialized
 	at com.example.AppService.performOperation(AppService.java:15)
 	at com.example.AppRunner.run(AppRunner.java:9)
@@ -30,19 +14,19 @@ Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" becau
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at com.example.Main.main(Main.java:5)
 
-|microservice-1| July 23, 2024 01:42:05 PM com.google.cloud.spanner.SpannerException: ABORTED: Transaction aborted due to concurrent modification.
-	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerExceptionPreformatted(SpannerExceptionFactory.java:78)
-	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:91)
-	at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:115)
-	at com.google.cloud.spanner.v1.SpannerImpl$9.onFailure(SpannerImpl.java:1360)
-	at com.google.api.core.ApiFutures$1.onFailure(ApiFutures.java:68)
-	at com.google.api.core.SettableApiFuture$1.run(SettableApiFuture.java:91)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.grpc.StatusRuntimeException: ABORTED: Transaction was aborted. It can be retried.
-	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:278)
-	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:261)
-	at com.google.spanner.v1.SpannerGrpc$SpannerBlockingStub.commit(SpannerGrpc.java:2165)
-	at com.google.cloud.spanner.v1.SpannerImpl$9.apply(SpannerImpl.java:1348)
-	... 6 more
+|microservice-2| Aug 01, 2024 01:42:05 PM java.lang.RuntimeException: Failed to process request
+	at com.example.service.OrderService.processOrder(OrderService.java:42)
+	at com.example.controller.OrderController.submitOrder(OrderController.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+
+|microservice-1| July 23, 2025 01:42:05 PM Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at com.example.utils.Sorter.quickSort(Sorter.java:88)
+	at com.example.MainApp.sortNumbers(MainApp.java:23)
+	at com.example.MainApp.main(MainApp.java:10)
+
+|microservice-3| May 21, 2025 01:42:05 PM com.google.cloud.spanner.SpannerException: ABORTED: Transaction was aborted due to concurrent modification. Retry the transaction.
+    at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:82)
+    at com.google.cloud.spanner.SpannerExceptionFactory.newSpannerException(SpannerExceptionFactory.java:55)
+    at com.google.cloud.spanner.SpannerImpl$DatabaseClientImpl$5.onFailure(SpannerImpl.java:604)
