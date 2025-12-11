@@ -1,61 +1,78 @@
 <?xml version="1.0" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0">
+<ns0:project xmlns:ns0="http://maven.apache.org/POM/4.0.0">
   
-  
-  
-    
-  
-  
-  <modelVersion>4.0.0</modelVersion>
   
   
   
     
   
   
-  <groupId>com.example</groupId>
   
+  <ns0:modelVersion>4.0.0</ns0:modelVersion>
   
-  
-    
-  
-  
-  <artifactId>java-exception-analyzer</artifactId>
   
   
   
     
   
   
-  <version>1.6-SNAPSHOT</version>
+  
+  <ns0:groupId>com.example</ns0:groupId>
+  
   
   
   
     
   
   
-  <properties>
+  
+  <ns0:artifactId>java-exception-analyzer</ns0:artifactId>
+  
+  
+  
+  
+    
+  
+  
+  
+  <ns0:version>1.7-SNAPSHOT</ns0:version>
+  
+  
+  
+  
+    
+  
+  
+  
+  <ns0:properties>
+    
     
     
     
         
     
     
-    <maven.compiler.source>17</maven.compiler.source>
+    
+    <ns0:maven.compiler.source>17</ns0:maven.compiler.source>
+    
     
     
     
         
     
     
-    <maven.compiler.target>17</maven.compiler.target>
+    
+    <ns0:maven.compiler.target>17</ns0:maven.compiler.target>
+    
     
     
     
     
   
   
-  </properties>
+  
+  </ns0:properties>
+  
   
   
   
@@ -63,35 +80,45 @@
     
   
   
-  <parent>
+  
+  <ns0:parent>
     
-    
-    
-        
-    
-    
-    <groupId>org.springframework.boot</groupId>
     
     
     
         
     
     
-    <artifactId>spring-boot-starter-parent</artifactId>
+    
+    <ns0:groupId>org.springframework.boot</ns0:groupId>
+    
     
     
     
         
     
     
-    <version>3.2.4</version>
+    
+    <ns0:artifactId>spring-boot-starter-parent</ns0:artifactId>
+    
+    
+    
+    
+        
+    
+    
+    
+    <ns0:version>3.2.4</ns0:version>
+    
     
     
     
     
   
   
-  </parent>
+  
+  </ns0:parent>
+  
   
   
   
@@ -99,7 +126,9 @@
     
   
   
-  <dependencies>
+  
+  <ns0:dependencies>
+    
     
     
     
@@ -107,101 +136,91 @@
         
     
     
-    <dependency>
+    
+    <ns0:dependency>
       
-      
-      
-            
-      
-      
-      <groupId>io.r2dbc</groupId>
       
       
       
             
       
       
-      <artifactId>r2dbc-spi</artifactId>
+      
+      <ns0:groupId>io.r2dbc</ns0:groupId>
+      
       
       
       
             
       
       
-      <version>1.0.0.RELEASE</version>
+      
+      <ns0:artifactId>r2dbc-spi</ns0:artifactId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:version>1.0.0.RELEASE</ns0:version>
+      
       
       
        
         
     
     
-    </dependency>
     
+    </ns0:dependency>
     
-    
-
-        
-    
-    
-    <dependency>
-      
-      
-      
-            
-      
-      
-      <groupId>io.r2dbc</groupId>
-      
-      
-      
-            
-      
-      
-      <artifactId>r2dbc-h2</artifactId>
-      
-      
-      
-            
-      
-      
-      <version>0.8.4.RELEASE</version>
-      
-      
-      
-        
-    
-    
-    </dependency>
     
     
     
 
         
-        
     
     
-    <dependency>
+    
+    <ns0:dependency>
+      
       
       
       
             
       
       
-      <groupId>org.springframework.boot</groupId>
+      
+      <ns0:groupId>io.r2dbc</ns0:groupId>
+      
       
       
       
             
       
       
-      <artifactId>spring-boot-starter-web</artifactId>
+      
+      <ns0:artifactId>r2dbc-h2</ns0:artifactId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:version>0.8.4.RELEASE</ns0:version>
+      
       
       
       
         
     
     
-    </dependency>
+    
+    </ns0:dependency>
+    
     
     
     
@@ -210,35 +229,36 @@
         
     
     
-    <dependency>
+    
+    <ns0:dependency>
       
-      
-      
-            
-      
-      
-      <groupId>org.projectlombok</groupId>
       
       
       
             
       
       
-      <artifactId>lombok</artifactId>
+      
+      <ns0:groupId>org.springframework.boot</ns0:groupId>
+      
       
       
       
             
       
       
-      <optional>true</optional>
+      
+      <ns0:artifactId>spring-boot-starter-web</ns0:artifactId>
+      
       
       
       
         
     
     
-    </dependency>
+    
+    </ns0:dependency>
+    
     
     
     
@@ -247,35 +267,92 @@
         
     
     
-    <dependency>
+    
+    <ns0:dependency>
       
-      
-      
-            
-      
-      
-      <groupId>com.github.librepdf</groupId>
       
       
       
             
       
       
-      <artifactId>openpdf</artifactId>
+      
+      <ns0:groupId>org.projectlombok</ns0:groupId>
+      
       
       
       
             
       
       
-      <version>1.3.30</version>
+      
+      <ns0:artifactId>lombok</ns0:artifactId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:optional>true</ns0:optional>
+      
       
       
       
         
     
     
-    </dependency>
+    
+    </ns0:dependency>
+    
+    
+    
+    
+
+        
+        
+    
+    
+    
+    <ns0:dependency>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:groupId>com.github.librepdf</ns0:groupId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:artifactId>openpdf</ns0:artifactId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:version>1.3.30</ns0:version>
+      
+      
+      
+      
+        
+    
+    
+    
+    </ns0:dependency>
+    
     
     
     
@@ -283,35 +360,45 @@
         
     
     
-    <dependency>
+    
+    <ns0:dependency>
       
-      
-      
-            
-      
-      
-      <groupId>org.json</groupId>
       
       
       
             
       
       
-      <artifactId>json</artifactId>
+      
+      <ns0:groupId>org.json</ns0:groupId>
+      
       
       
       
             
       
       
-      <version>20240303</version>
+      
+      <ns0:artifactId>json</ns0:artifactId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:version>20240303</ns0:version>
+      
       
       
       
         
     
     
-    </dependency>
+    
+    </ns0:dependency>
+    
     
     
     
@@ -319,35 +406,45 @@
         
     
     
-    <dependency>
+    
+    <ns0:dependency>
       
-      
-      
-            
-      
-      
-      <groupId>com.fasterxml.jackson.core</groupId>
       
       
       
             
       
       
-      <artifactId>jackson-databind</artifactId>
+      
+      <ns0:groupId>com.fasterxml.jackson.core</ns0:groupId>
+      
       
       
       
             
       
       
-      <version>2.15.2</version>
+      
+      <ns0:artifactId>jackson-databind</ns0:artifactId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:version>2.15.2</ns0:version>
+      
       
       
       
         
     
     
-    </dependency>
+    
+    </ns0:dependency>
+    
     
     
     
@@ -355,42 +452,54 @@
         
     
     
-    <dependency>
+    
+    <ns0:dependency>
       
-      
-      
-            
-      
-      
-      <groupId>org.apache.maven.plugins</groupId>
       
       
       
             
       
       
-      <artifactId>maven-compiler-plugin</artifactId>
+      
+      <ns0:groupId>org.apache.maven.plugins</ns0:groupId>
+      
       
       
       
             
       
       
-      <version>3.8.1</version>
+      
+      <ns0:artifactId>maven-compiler-plugin</ns0:artifactId>
+      
+      
+      
+      
+            
+      
+      
+      
+      <ns0:version>3.8.1</ns0:version>
+      
       
       
       
         
     
     
-    </dependency>
+    
+    </ns0:dependency>
+    
     
     
     
     
   
   
-  </dependencies>
+  
+  </ns0:dependencies>
+  
   
   
   
@@ -398,14 +507,18 @@
     
   
   
-  <build>
+  
+  <ns0:build>
+    
     
     
     
         
     
     
-    <plugins>
+    
+    <ns0:plugins>
+      
       
       
       
@@ -413,46 +526,59 @@
             
       
       
-      <plugin>
+      
+      <ns0:plugin>
+        
         
         
         
                 
         
         
-        <groupId>org.springframework.boot</groupId>
+        
+        <ns0:groupId>org.springframework.boot</ns0:groupId>
+        
         
         
         
                 
         
         
-        <artifactId>spring-boot-maven-plugin</artifactId>
+        
+        <ns0:artifactId>spring-boot-maven-plugin</ns0:artifactId>
+        
         
         
         
             
       
       
-      </plugin>
+      
+      </ns0:plugin>
+      
       
       
       
         
     
     
-    </plugins>
+    
+    </ns0:plugins>
+    
     
     
     
     
   
   
-  </build>
+  
+  </ns0:build>
+  
   
   
   
 
 
 
-</project>
+
+</ns0:project>
