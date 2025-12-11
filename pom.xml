@@ -1,206 +1,332 @@
 <?xml version="1.0" ?>
 <ns0:project xmlns:ns0="http://maven.apache.org/POM/4.0.0">
   
+  
     
+  
   <ns0:modelVersion>4.0.0</ns0:modelVersion>
   
+  
     
+  
   <ns0:groupId>com.example</ns0:groupId>
   
+  
     
+  
   <ns0:artifactId>java-exception-analyzer</ns0:artifactId>
   
-    
-  <ns0:version>1.1-SNAPSHOT</ns0:version>
   
     
+  
+  <ns0:version>1.2-SNAPSHOT</ns0:version>
+  
+  
+    
+  
   <ns0:properties>
     
-        
-    <ns0:maven.compiler.source>17</ns0:maven.compiler.source>
     
         
+    
+    <ns0:maven.compiler.source>17</ns0:maven.compiler.source>
+    
+    
+        
+    
     <ns0:maven.compiler.target>17</ns0:maven.compiler.target>
     
     
+    
+  
   </ns0:properties>
+  
   
 
     
+  
   <ns0:parent>
     
+    
         
+    
     <ns0:groupId>org.springframework.boot</ns0:groupId>
     
-        
-    <ns0:artifactId>spring-boot-starter-parent</ns0:artifactId>
     
         
+    
+    <ns0:artifactId>spring-boot-starter-parent</ns0:artifactId>
+    
+    
+        
+    
     <ns0:version>3.2.4</ns0:version>
     
     
+    
+  
   </ns0:parent>
   
-
-    
-  <ns0:dependencies>
-    
-
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>io.r2dbc</ns0:groupId>
-      
-            
-      <ns0:artifactId>r2dbc-spi</ns0:artifactId>
-      
-            
-      <ns0:version>1.0.0.RELEASE</ns0:version>
-       
-        
-    </ns0:dependency>
-    
-
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>io.r2dbc</ns0:groupId>
-      
-            
-      <ns0:artifactId>r2dbc-h2</ns0:artifactId>
-      
-            
-      <ns0:version>0.8.4.RELEASE</ns0:version>
-      
-        
-    </ns0:dependency>
-    
-
-        
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>org.springframework.boot</ns0:groupId>
-      
-            
-      <ns0:artifactId>spring-boot-starter-web</ns0:artifactId>
-      
-        
-    </ns0:dependency>
-    
-
-        
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>org.projectlombok</ns0:groupId>
-      
-            
-      <ns0:artifactId>lombok</ns0:artifactId>
-      
-            
-      <ns0:optional>true</ns0:optional>
-      
-        
-    </ns0:dependency>
-    
-
-        
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>com.github.librepdf</ns0:groupId>
-      
-            
-      <ns0:artifactId>openpdf</ns0:artifactId>
-      
-            
-      <ns0:version>1.3.30</ns0:version>
-      
-        
-    </ns0:dependency>
-    
-
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>org.json</ns0:groupId>
-      
-            
-      <ns0:artifactId>json</ns0:artifactId>
-      
-            
-      <ns0:version>20240303</ns0:version>
-      
-        
-    </ns0:dependency>
-    
-        
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>com.fasterxml.jackson.core</ns0:groupId>
-      
-            
-      <ns0:artifactId>jackson-databind</ns0:artifactId>
-      
-            
-      <ns0:version>2.15.2</ns0:version>
-      
-        
-    </ns0:dependency>
-    
-
-        
-    <ns0:dependency>
-      
-            
-      <ns0:groupId>org.apache.maven.plugins</ns0:groupId>
-      
-            
-      <ns0:artifactId>maven-compiler-plugin</ns0:artifactId>
-      
-            
-      <ns0:version>3.8.1</ns0:version>
-      
-        
-    </ns0:dependency>
-    
-    
-  </ns0:dependencies>
   
 
     
-  <ns0:build>
+  
+  <ns0:dependencies>
+    
+    
+
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>io.r2dbc</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>r2dbc-spi</ns0:artifactId>
+      
+      
+            
+      
+      <ns0:version>1.0.0.RELEASE</ns0:version>
+      
+       
+        
+    
+    </ns0:dependency>
+    
+    
+
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>io.r2dbc</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>r2dbc-h2</ns0:artifactId>
+      
+      
+            
+      
+      <ns0:version>0.8.4.RELEASE</ns0:version>
+      
+      
+        
+    
+    </ns0:dependency>
+    
+    
+
+        
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>org.springframework.boot</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>spring-boot-starter-web</ns0:artifactId>
+      
+      
+        
+    
+    </ns0:dependency>
+    
+    
+
+        
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>org.projectlombok</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>lombok</ns0:artifactId>
+      
+      
+            
+      
+      <ns0:optional>true</ns0:optional>
+      
+      
+        
+    
+    </ns0:dependency>
+    
+    
+
+        
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>com.github.librepdf</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>openpdf</ns0:artifactId>
+      
+      
+            
+      
+      <ns0:version>1.3.30</ns0:version>
+      
+      
+        
+    
+    </ns0:dependency>
+    
+    
+
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>org.json</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>json</ns0:artifactId>
+      
+      
+            
+      
+      <ns0:version>20240303</ns0:version>
+      
+      
+        
+    
+    </ns0:dependency>
+    
     
         
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>com.fasterxml.jackson.core</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>jackson-databind</ns0:artifactId>
+      
+      
+            
+      
+      <ns0:version>2.15.2</ns0:version>
+      
+      
+        
+    
+    </ns0:dependency>
+    
+    
+
+        
+    
+    <ns0:dependency>
+      
+      
+            
+      
+      <ns0:groupId>org.apache.maven.plugins</ns0:groupId>
+      
+      
+            
+      
+      <ns0:artifactId>maven-compiler-plugin</ns0:artifactId>
+      
+      
+            
+      
+      <ns0:version>3.8.1</ns0:version>
+      
+      
+        
+    
+    </ns0:dependency>
+    
+    
+    
+  
+  </ns0:dependencies>
+  
+  
+
+    
+  
+  <ns0:build>
+    
+    
+        
+    
     <ns0:plugins>
       
+      
             
             
+      
       <ns0:plugin>
         
+        
                 
+        
         <ns0:groupId>org.springframework.boot</ns0:groupId>
         
+        
                 
+        
         <ns0:artifactId>spring-boot-maven-plugin</ns0:artifactId>
         
+        
             
+      
       </ns0:plugin>
       
+      
         
+    
     </ns0:plugins>
     
     
+    
+  
   </ns0:build>
   
+  
+
 
 </ns0:project>
