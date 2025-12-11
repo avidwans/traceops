@@ -1,332 +1,458 @@
 <?xml version="1.0" ?>
-<ns0:project xmlns:ns0="http://maven.apache.org/POM/4.0.0">
+<project xmlns="http://maven.apache.org/POM/4.0.0">
   
-  
-    
-  
-  <ns0:modelVersion>4.0.0</ns0:modelVersion>
   
   
     
   
-  <ns0:groupId>com.example</ns0:groupId>
   
+  <modelVersion>4.0.0</modelVersion>
   
-    
-  
-  <ns0:artifactId>java-exception-analyzer</ns0:artifactId>
   
   
     
   
-  <ns0:version>1.2-SNAPSHOT</ns0:version>
+  
+  <groupId>com.example</groupId>
+  
   
   
     
   
-  <ns0:properties>
+  
+  <artifactId>java-exception-analyzer</artifactId>
+  
+  
+  
+    
+  
+  
+  <version>1.3-SNAPSHOT</version>
+  
+  
+  
+    
+  
+  
+  <properties>
+    
     
     
         
     
-    <ns0:maven.compiler.source>17</ns0:maven.compiler.source>
+    
+    <maven.compiler.source>17</maven.compiler.source>
+    
     
     
         
     
-    <ns0:maven.compiler.target>17</ns0:maven.compiler.target>
+    
+    <maven.compiler.target>17</maven.compiler.target>
+    
     
     
     
   
-  </ns0:properties>
+  
+  </properties>
+  
   
   
 
     
   
-  <ns0:parent>
+  
+  <parent>
     
-    
-        
-    
-    <ns0:groupId>org.springframework.boot</ns0:groupId>
     
     
         
     
-    <ns0:artifactId>spring-boot-starter-parent</ns0:artifactId>
+    
+    <groupId>org.springframework.boot</groupId>
+    
     
     
         
     
-    <ns0:version>3.2.4</ns0:version>
+    
+    <artifactId>spring-boot-starter-parent</artifactId>
+    
+    
+    
+        
+    
+    
+    <version>3.2.4</version>
+    
     
     
     
   
-  </ns0:parent>
+  
+  </parent>
+  
   
   
 
     
   
-  <ns0:dependencies>
+  
+  <dependencies>
+    
     
     
 
         
     
-    <ns0:dependency>
+    
+    <dependency>
       
-      
-            
-      
-      <ns0:groupId>io.r2dbc</ns0:groupId>
       
       
             
       
-      <ns0:artifactId>r2dbc-spi</ns0:artifactId>
+      
+      <groupId>io.r2dbc</groupId>
+      
       
       
             
       
-      <ns0:version>1.0.0.RELEASE</ns0:version>
+      
+      <artifactId>r2dbc-spi</artifactId>
+      
+      
+      
+            
+      
+      
+      <version>1.0.0.RELEASE</version>
+      
       
        
         
     
-    </ns0:dependency>
     
+    </dependency>
     
-
-        
-    
-    <ns0:dependency>
-      
-      
-            
-      
-      <ns0:groupId>io.r2dbc</ns0:groupId>
-      
-      
-            
-      
-      <ns0:artifactId>r2dbc-h2</ns0:artifactId>
-      
-      
-            
-      
-      <ns0:version>0.8.4.RELEASE</ns0:version>
-      
-      
-        
-    
-    </ns0:dependency>
     
     
 
         
-        
     
-    <ns0:dependency>
+    
+    <dependency>
+      
       
       
             
       
-      <ns0:groupId>org.springframework.boot</ns0:groupId>
+      
+      <groupId>io.r2dbc</groupId>
+      
       
       
             
       
-      <ns0:artifactId>spring-boot-starter-web</ns0:artifactId>
+      
+      <artifactId>r2dbc-h2</artifactId>
+      
+      
+      
+            
+      
+      
+      <version>0.8.4.RELEASE</version>
+      
       
       
         
     
-    </ns0:dependency>
+    
+    </dependency>
+    
     
     
 
         
         
     
-    <ns0:dependency>
+    
+    <dependency>
       
-      
-            
-      
-      <ns0:groupId>org.projectlombok</ns0:groupId>
       
       
             
       
-      <ns0:artifactId>lombok</ns0:artifactId>
+      
+      <groupId>org.springframework.boot</groupId>
+      
       
       
             
       
-      <ns0:optional>true</ns0:optional>
+      
+      <artifactId>spring-boot-starter-web</artifactId>
+      
       
       
         
     
-    </ns0:dependency>
+    
+    </dependency>
+    
     
     
 
         
         
     
-    <ns0:dependency>
+    
+    <dependency>
       
-      
-            
-      
-      <ns0:groupId>com.github.librepdf</ns0:groupId>
       
       
             
       
-      <ns0:artifactId>openpdf</ns0:artifactId>
+      
+      <groupId>org.projectlombok</groupId>
+      
       
       
             
       
-      <ns0:version>1.3.30</ns0:version>
+      
+      <artifactId>lombok</artifactId>
+      
+      
+      
+            
+      
+      
+      <optional>true</optional>
+      
       
       
         
     
-    </ns0:dependency>
+    
+    </dependency>
+    
+    
+    
+
+        
+        
+    
+    
+    <dependency>
+      
+      
+      
+            
+      
+      
+      <groupId>com.github.librepdf</groupId>
+      
+      
+      
+            
+      
+      
+      <artifactId>openpdf</artifactId>
+      
+      
+      
+            
+      
+      
+      <version>1.3.30</version>
+      
+      
+      
+        
+    
+    
+    </dependency>
+    
     
     
 
         
     
-    <ns0:dependency>
+    
+    <dependency>
       
-      
-            
-      
-      <ns0:groupId>org.json</ns0:groupId>
       
       
             
       
-      <ns0:artifactId>json</ns0:artifactId>
+      
+      <groupId>org.json</groupId>
+      
       
       
             
       
-      <ns0:version>20240303</ns0:version>
+      
+      <artifactId>json</artifactId>
+      
+      
+      
+            
+      
+      
+      <version>20240303</version>
+      
       
       
         
     
-    </ns0:dependency>
+    
+    </dependency>
+    
     
     
         
         
     
-    <ns0:dependency>
+    
+    <dependency>
       
-      
-            
-      
-      <ns0:groupId>com.fasterxml.jackson.core</ns0:groupId>
       
       
             
       
-      <ns0:artifactId>jackson-databind</ns0:artifactId>
+      
+      <groupId>com.fasterxml.jackson.core</groupId>
+      
       
       
             
       
-      <ns0:version>2.15.2</ns0:version>
+      
+      <artifactId>jackson-databind</artifactId>
+      
+      
+      
+            
+      
+      
+      <version>2.15.2</version>
+      
       
       
         
     
-    </ns0:dependency>
+    
+    </dependency>
+    
     
     
 
         
     
-    <ns0:dependency>
+    
+    <dependency>
       
-      
-            
-      
-      <ns0:groupId>org.apache.maven.plugins</ns0:groupId>
       
       
             
       
-      <ns0:artifactId>maven-compiler-plugin</ns0:artifactId>
+      
+      <groupId>org.apache.maven.plugins</groupId>
+      
       
       
             
       
-      <ns0:version>3.8.1</ns0:version>
+      
+      <artifactId>maven-compiler-plugin</artifactId>
+      
+      
+      
+            
+      
+      
+      <version>3.8.1</version>
+      
       
       
         
     
-    </ns0:dependency>
+    
+    </dependency>
+    
     
     
     
   
-  </ns0:dependencies>
+  
+  </dependencies>
+  
   
   
 
     
   
-  <ns0:build>
+  
+  <build>
+    
     
     
         
     
-    <ns0:plugins>
+    
+    <plugins>
+      
       
       
             
             
       
-      <ns0:plugin>
+      
+      <plugin>
+        
         
         
                 
         
-        <ns0:groupId>org.springframework.boot</ns0:groupId>
+        
+        <groupId>org.springframework.boot</groupId>
+        
         
         
                 
         
-        <ns0:artifactId>spring-boot-maven-plugin</ns0:artifactId>
+        
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        
         
         
             
       
-      </ns0:plugin>
+      
+      </plugin>
+      
       
       
         
     
-    </ns0:plugins>
+    
+    </plugins>
+    
     
     
     
   
-  </ns0:build>
+  
+  </build>
+  
   
   
 
 
-</ns0:project>
+
+</project>
